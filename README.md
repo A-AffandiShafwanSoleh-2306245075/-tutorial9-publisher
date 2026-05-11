@@ -35,3 +35,13 @@ diproses oleh subscriber. Subscriber mencetak setiap pesan yang diterima
 ke console seperti terlihat pada screenshot berikut.
 
 ![Sending Event](assets/Screenshot%202026-05-11%20122448.png)
+
+
+## Monitoring Chart Based on Publisher
+
+Setiap kali publisher dijalankan, terjadi spike (lonjakan) pada chart 
+message rates di RabbitMQ. Hal ini terjadi karena publisher mengirimkan 
+5 pesan sekaligus ke message broker, sehingga terjadi peningkatan 
+aktivitas pengiriman pesan yang terlihat sebagai spike pada grafik.
+
+![Monitoring Chart](assets/Screenshot%202026-05-11%20122938.png)
