@@ -25,3 +25,13 @@ RabbitMQ berhasil dijalankan menggunakan Docker dengan perintah:
 `docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13-management`
 
 ![RabbitMQ Dashboard](assets/Screenshot%202026-05-11%20110904.png)
+
+
+## Sending and Processing Event
+
+Ketika publisher dijalankan (`cargo run`), publisher mengirimkan 5 event 
+ke message broker RabbitMQ. Event-event tersebut kemudian dikonsumsi dan 
+diproses oleh subscriber. Subscriber mencetak setiap pesan yang diterima 
+ke console seperti terlihat pada screenshot berikut.
+
+![Sending Event](assets/Screenshot%202026-05-11%20122448.png)
