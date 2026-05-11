@@ -17,3 +17,11 @@ URL yang sama berarti publisher dan subscriber terhubung ke message broker
 tersebut, dan subscriber mendengarkan/mengkonsumsi event dari RabbitMQ di
 alamat yang sama. Inilah cara keduanya berkomunikasi secara tidak langsung,
 yaitu melalui perantara message broker yang sama.
+
+
+## Running RabbitMQ as Message Broker
+
+RabbitMQ berhasil dijalankan menggunakan Docker dengan perintah:
+`docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.13-management`
+
+![RabbitMQ Dashboard](assets/Screenshot%202026-05-11%20110904.png)
